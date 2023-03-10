@@ -11,3 +11,12 @@ body {
   color: white;
   font-family: "Roboto", sans-serif;
 }
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ffffff2f;
+  border-radius: 4px;
+}
