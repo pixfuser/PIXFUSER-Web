@@ -1,0 +1,53 @@
+#home_section {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  min-height: calc(100vh - 80px);
+  padding: 0 20px;
+  margin-top: -30px;
+  user-select: none;
+}
+
+#home_section > img {
+  width: 435px;
+}
+
+#home_details {
+  background-image: url("../Images/solana-shape.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 470px;
+  width: 480px;
+  padding-left: 45px;
+}
+
+#home_details ul {
+  font-family: monospace;
+  font-size: 0.95em;
+  margin-left: 15px;
+  margin-bottom: 6px;
+}
+
+#home_details p {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  letter-spacing: 1px;
+  line-height: 46px;
+  word-spacing: 3px;
+  width: 400px;
+}
+
+#home_details p span {
+  border-bottom: 1px solid white;
+  font-family: monospace;
+  word-spacing: 0;
+}
+
+#home_options {
+  margin-top: 48px;
+  margin-left: 10px;
+}
