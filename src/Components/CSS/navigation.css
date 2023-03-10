@@ -1,0 +1,76 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  padding: 0 80px;
+  user-select: none;
+}
+
+#nav_title {
+  align-items: center;
+  column-gap: 8px;
+  cursor: pointer;
+  display: flex;
+}
+
+#nav_title img {
+  width: 40px;
+}
+
+#nav_title h1 {
+  font-family: monospace, sans-serif;
+  font-size: 1.5em;
+  letter-spacing: 0.5px;
+}
+
+#nav_options {
+  align-items: center;
+  column-gap: 44px;
+  display: flex;
+}
+
+#nav_options div {
+  column-gap: 32px;
+  display: flex;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 0.95em;
+  letter-spacing: 0.4px;
+}
+
+.nav_option {
+  border-bottom: 2px solid rgba(255, 255, 255, 0);
+  cursor: pointer;
+  padding: 3px 6px;
+  margin-bottom: -4px;
+  transition: all 0.2s ease-in-out;
+}
+
+.nav_option:hover {
+  border-bottom: 2px solid cyan;
+}
+
+.nav_option:active {
+  transform: translateY(2px);
+}
+
+.get_card {
+  border: none;
+  background-color: #f37453;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 0.85em;
+  letter-spacing: 0.5px;
+  padding: 8px 15px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.get_card:hover {
+  transform: scale(1.03);
+}
+
+.get_card:active {
+  transform: scale(1);
+}
