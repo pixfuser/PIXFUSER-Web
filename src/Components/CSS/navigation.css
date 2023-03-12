@@ -53,7 +53,8 @@ nav {
   transform: translateY(2px);
 }
 
-.get_card {
+.get_card,
+.default_button {
   border: none;
   background-color: #f37453;
   border-radius: 5px;
