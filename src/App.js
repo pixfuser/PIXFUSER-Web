@@ -7,6 +7,8 @@ import User from "./Components/User";
 import { auth } from "./firebase";
 import { useEffect, useState } from "react";
 
+import Footer from "./Components/Footer";
+
 function App() {
   const [currentUser, setCurrentUser] = useState(undefined);
 
@@ -41,11 +43,9 @@ function App() {
       <Navigation />
       <Home />
       <Features />
-      {currentUser ? (
-        <User user={currentUser} />
-      ) : (
-        <Signin user={currentUser} />
-      )}
+      {currentUser ? <User user={currentUser} /> : <Signin />}
+
+      <Footer />
     </>
   );
 }
