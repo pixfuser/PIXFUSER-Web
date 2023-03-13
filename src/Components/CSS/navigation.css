@@ -1,9 +1,13 @@
 nav {
+  background-color: rgba(26, 32, 50, 0.8);
+  backdrop-filter: blur(6px);
   display: flex;
   justify-content: space-between;
   height: 80px;
   padding: 0 80px;
   user-select: none;
+  position: sticky;
+  top: 0;
 }
 
 #nav_title {
