@@ -1,0 +1,64 @@
+#product {
+  height: 100vh;
+  padding: 50px 0;
+}
+
+#product > h1 {
+  font-size: 30px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  letter-spacing: 1px;
+  word-spacing: 6px;
+  user-select: none;
+  text-align: center;
+}
+
+#product_details {
+  align-items: center;
+  justify-content: space-evenly;
+  display: flex;
+  height: 100%;
+}
+
+#product_details > img {
+  margin: 20px;
+  width: 40%;
+  max-width: 450px;
+  min-width: 350px;
+}
+
+#product_details > div {
+  display: flex;
+  flex-direction: column;
+  height: 60%;
+  width: 40%;
+}
+
+#product_details > div > h1 {
+  font-weight: 500;
+  margin-bottom: 10%;
+}
+
+#product_details h2 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+#product_features {
+  margin-bottom: 7%;
+}
+
+#product_features ul {
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 28px;
+  letter-spacing: 0.3px;
+  margin-left: 18px;
+}
+
+#product_pricing p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.9em;
+  letter-spacing: 0.3px;
+  line-height: 24px;
+}

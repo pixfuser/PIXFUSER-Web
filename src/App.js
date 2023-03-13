@@ -7,6 +7,7 @@ import User from "./Components/User";
 import { auth } from "./firebase";
 import { useEffect, useState } from "react";
 
+import Product from "./Components/Product";
 import Footer from "./Components/Footer";
 
 function App() {
@@ -45,6 +46,7 @@ function App() {
       <Features />
       {currentUser ? <User user={currentUser} /> : <Signin />}
 
+      <Product />
       <Footer />
     </>
   );
