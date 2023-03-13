@@ -1,0 +1,83 @@
+#applyCard {
+  z-index: 10;
+}
+#applyCard h1 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  margin: 28px 38px;
+}
+
+#apply_details {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.input_field {
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  display: flex;
+  padding: 6px 14px;
+  margin: 10px 0;
+  width: 60%;
+}
+
+.input_field img {
+  width: 24px;
+}
+
+#apply_details input {
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
+  padding: 0 12px;
+  width: 100%;
+  outline: none;
+}
+
+::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: "Ubuntu", sans-serif;
+  font-size: 13px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#apply_details button {
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-top: 20px;
+  padding: 7px 20px;
+}
+
+.default_button:hover {
+  transform: scale(1.03);
+}
+
+.default_button:active {
+  transform: scale(1);
+}
+
+#successPop {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#successPop img {
+  width: 220px;
+}
+
+#successPop p {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+}

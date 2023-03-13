@@ -19,16 +19,27 @@ function App() {
       if (user) {
         setTimeout(() => {
           const popup = document.getElementById("userPopup");
-          const popupChild = document.getElementById("userPop");
+          const userPop = document.getElementById("userPop");
+          const applyPop = document.getElementById("applyCard");
+
           popup.style.display = "flex";
           popup.style.animation = "fadeIn 0.15s 0s";
           function hidePopup(event) {
-            if (!popupChild.contains(event.target)) {
+            if (
+              !userPop.contains(event.target) &&
+              !applyPop.contains(event.target)
+            ) {
               popup.style.animation = "fadeOut 0.25s 0s";
 
               setTimeout(() => {
                 popup.style.display = "none";
               }, 250);
+
+              setTimeout(() => {
+                userPop.style.display = "flex";
+                applyPop.style.display = "none";
+                document.getElementById("successPop").style.display = "none";
+              }, 1000);
 
               document.removeEventListener("click", hidePopup);
             }
