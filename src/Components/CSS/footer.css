@@ -1,7 +1,5 @@
 #footer {
   background-color: #25303f;
-  height: 320px;
-  margin-top: 40px;
   padding: 0 100px;
 }
 
@@ -102,6 +100,7 @@
   justify-content: space-between;
   margin: 0 48px;
   letter-spacing: 0.3px;
+  padding-bottom: 28px;
 }
 
 #footer_bottom > div {
@@ -116,4 +115,33 @@
 
 #footer_bottom p:hover {
   color: rgba(255, 255, 255, 0.95);
+}
+
+@media only screen and (max-width: 900px) {
+  #footer {
+    padding: 0 20px;
+  }
+}
+
+@media only screen and (max-width: 730px) {
+  .footer_options {
+    margin: 32px 20px;
+  }
+
+  #footer_bottom {
+    margin: 0 20px;
+    flex-direction: column-reverse;
+    row-gap: 20px;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  #footer_middle {
+    align-items: start;
+    flex-direction: column-reverse;
+  }
+
+  #footer_contact {
+    margin: 32px 20px 10px;
+  }
 }
