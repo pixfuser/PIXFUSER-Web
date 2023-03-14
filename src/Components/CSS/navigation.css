@@ -8,6 +8,7 @@ nav {
   user-select: none;
   position: sticky;
   top: 0;
+  z-index: 3;
 }
 
 #nav_title {
@@ -78,4 +79,55 @@ nav {
 
 .get_card:active {
   transform: scale(1);
+}
+
+#menu,
+#close {
+  display: none;
+  width: 32px;
+}
+
+@media only screen and (max-width: 790px) {
+  nav {
+    padding: 0 20px;
+  }
+}
+
+@media only screen and (max-width: 675px) {
+  #nav_title h1 {
+    display: none;
+  }
+
+  #nav_options {
+    column-gap: 18px;
+  }
+
+  #nav_options div {
+    align-items: center;
+    background-color: rgba(26, 32, 50, 0.8);
+    backdrop-filter: blur(6px);
+    flex-direction: column;
+    position: absolute;
+    top: -110px;
+    left: 0;
+    right: 0;
+    transition: all 0.2s ease-in-out;
+    z-index: -1;
+  }
+
+  .nav_option {
+    border: none;
+    text-align: center;
+    padding: 10px 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .nav_option:hover {
+    border: none;
+  }
+
+  #menu {
+    display: inline-block;
+  }
 }
