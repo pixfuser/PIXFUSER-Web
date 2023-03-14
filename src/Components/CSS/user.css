@@ -48,3 +48,14 @@
 #signout:active {
   transform: scale(1);
 }
+
+@media only screen and (max-width: 790px) {
+  #userPop {
+    height: 368px;
+  }
+
+  #userDetails {
+    row-gap: 15px;
+    margin: 40px 0;
+  }
+}
